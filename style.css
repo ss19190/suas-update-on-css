@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Teko:wght@300..700&display=swap');
 
-/* Reset i ogólne ustawienia */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +7,7 @@
 }
 
 body {
-    font-family: Teko, sans-serif;
+    font-family: 'Teko', sans-serif;
     font-weight: 400;
     background-color: #f4f4f4;
     color: #333;
@@ -18,12 +16,12 @@ body {
     min-height: 100vh;
 }
 
-/* Nagłówek */
-header {
+/* Nagłówek i stopka */
+header, footer {
     background-color: #081424;
     color: white;
     text-align: center;
-    font-family: orbitron;
+    font-family: 'Orbitron', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -33,6 +31,29 @@ header h1 {
     margin: 20px 0;
 }
 
+footer {
+    padding: 15px;
+    margin-top: auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* zmiana z flex-start na center */
+    gap: 20px;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* opcjonalnie, dla lepszej responsywności */
+    text-align: center;
+}
+
+.header-logo{
+    height: 50px;
+    width: auto;
+}
+
+.chosen-page{
+    background-color: #00558E;
+}
 
 /* Nawigacja */
 nav ul {
@@ -42,7 +63,6 @@ nav ul {
     gap: 20px;
     background-color: #0077B6;
     padding: 10px 0;
-    margin: 0;
 }
 
 nav ul li a {
@@ -58,8 +78,8 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Sekcja powitalna */
-#home {
+/* Formatowanie ogólnie dla sekcji */
+section {
     padding: 40px;
     text-align: center;
     background-color: white;
@@ -70,35 +90,10 @@ nav ul li a:hover {
     font-size: 1.5em;
 }
 
-.logo {
-    display: block;
-    margin: 40px auto;
-    max-width: 500px;
-}
 
-/* Stopka */
-footer {
-    background-color: #081424;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: auto;
-    font-family: orbitron;
-    font-style: normal;
-    font-weight: 400;
-}
+/* Sekcja z informacjami o drużynie */
 
-section{
-    padding: 40px;
-    text-align: center;
-    background-color: white;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    font-size: 1.5em;
-}
-
+/* Zdjęcie zespołu */
 .team-photo {
     width: 100vw;
     max-width: 100%;
@@ -110,7 +105,8 @@ section{
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
 }
 
-.team-members{
+/* Członkowie zespołu */
+.team-members {
     padding: 20px;
 }
 
@@ -118,25 +114,25 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc; /* Linie oddzielające członków */
+    border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 
 .member-photo-container {
-    flex-shrink: 0; /* Zapewnia, że zdjęcie nie będzie się kurczyć */
-    margin-right: 20px; /* Odstęp między zdjęciem a informacjami */
+    flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .member-photo {
-    width: 100px; /* Szerokość zdjęcia */
-    height: 100px; /* Wysokość zdjęcia */
-    border-radius: 50%; /* Okrągłe zdjęcie */
-    object-fit: cover; /* Przycinanie zdjęcia do okręgu */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .member-info {
-    flex-grow: 1; /* Zajmuje całą dostępną przestrzeń */
+    flex-grow: 1;
 }
 
 .member-info h3 {
@@ -149,6 +145,7 @@ section{
     font-size: 1rem;
 }
 
+/* Responsywność*/
 @media (max-width: 768px) {
     .member {
         flex-direction: column;
@@ -164,16 +161,19 @@ section{
     }
 }
 
+
+/* Sponsorzy */
+
 .sponsors {
     background-color: transparent;
     box-shadow: none;
 }
 
-.sponsors h2{
-    color:#004080;
+.sponsors h2 {
+    color: #004080;
 }
 
-.logos{
+.logos {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -208,6 +208,6 @@ section{
     margin: auto;
 }
 
-#dron-edu{
+#dron-edu {
     padding: 5%;
 }
