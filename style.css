@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+/* Reset i ogólne ustawienia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Teko, sans-serif;
+    font-weight: 400;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Nagłówek */
+header {
+    background-color: #081424;
+    color: white;
+    text-align: center;
+    font-family: orbitron;
+    font-style: normal;
+    font-weight: 400;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+
+/* Nawigacja */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #0077B6;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+/* Sekcja powitalna */
+#home {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.logo {
+    display: block;
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+/* Stopka */
+footer {
+    background-color: #081424;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-family: orbitron;
+    font-style: normal;
+    font-weight: 400;
+}
+
+section{
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.team-photo {
+    width: 100vw;
+    max-width: 100%;
+    height: 80%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.team-members{
+    padding: 20px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; /* Linie oddzielające członków */
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.member-photo-container {
+    flex-shrink: 0; /* Zapewnia, że zdjęcie nie będzie się kurczyć */
+    margin-right: 20px; /* Odstęp między zdjęciem a informacjami */
+}
+
+.member-photo {
+    width: 100px; /* Szerokość zdjęcia */
+    height: 100px; /* Wysokość zdjęcia */
+    border-radius: 50%; /* Okrągłe zdjęcie */
+    object-fit: cover; /* Przycinanie zdjęcia do okręgu */
+}
+
+.member-info {
+    flex-grow: 1; /* Zajmuje całą dostępną przestrzeń */
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.member-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .member {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .member-photo-container {
+        margin-bottom: 10px;
+    }
+
+    .member-info {
+        width: 100%;
+    }
+}
+
+.sponsors {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.sponsors h2{
+    color:#004080;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.sponsor {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 220px;
+}
+
+.sponsor:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sponsor-logo {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#dron-edu{
+    padding: 5%;
+}
