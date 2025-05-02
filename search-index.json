@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Home",
+        "url": "index.html",
+        "content": "Welcome to High Flyers - SUAS 2025. We are a team of passionate engineers and aviation enthusiasts participating in the SUAS 2025 competition."
+    },
+    {
+        "title": "Team",
+        "url": "team.html",
+        "content": "Meet our team members including Anna Kowalska, John Smith, and others contributing to the project."
+    },
+    {
+        "title": "Vehicle",
+        "url": "vehicle.html",
+        "content": "Our drone is a VTOL model equipped with a thermal camera and autonomous navigation system."
+    },
+    {
+        "title": "Progress",
+        "url": "progress.html",
+        "content": "Follow our latest updates on the project, including testing milestones and software development progress."
+    },
+    {
+        "title": "Sponsors",
+        "url": "sponsors.html",
+        "content": "We thank our sponsors for supporting the High Flyers project, including DronEdu, TechCorp, and AeroSupport."
+    },
+    {
+        "title": "Contact",
+        "url": "contact.html",
+        "content": "Get in touch with the High Flyers team through our contact form or by emailing us at contact@highflyers.com."
+    }
+]
