@@ -48,27 +48,7 @@
     </footer>
 
 
-    <script>
-        const toggleButton = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('.mobile-nav');
+    <script src="script.js"></script>
 
-        toggleButton.addEventListener('click', () => {
-            nav.classList.toggle('open');
-
-    });
-
-    // Search toggle logic
-    const searchToggle = document.getElementById('search-toggle');
-    const searchContainer = document.getElementById('search-container');
-
-    searchToggle.addEventListener('click', () => {
-        if (searchContainer.style.display === 'none') {
-            searchContainer.style.display = 'block';
-            searchToggle.style.display = 'none';
-        } else {
-            searchContainer.style.display = 'none';
-        }
-    });
-    </script>
 </body>
 </html>
