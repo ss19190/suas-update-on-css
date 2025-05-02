@@ -15,7 +15,6 @@
             <img src="assets/hf_logo_white.png" alt="High Flyers Logo" class="header-logo">
             <h1>High Flyers - SUAS 2025</h1>
             <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-            <div class="gcse-search"></div>
         </div>
         <nav class="mobile-nav">
             <ul>
@@ -25,6 +24,14 @@
                 <li><a href="progress.html">Progress</a></li>
                 <li><a href="sponsors.html">Sponsors</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button id="search-toggle" aria-label="Toggle search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </li>
+                <li id="search-container" style="display: none;">
+                    <div class="gcse-search"></div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -48,6 +55,19 @@
         toggleButton.addEventListener('click', () => {
             nav.classList.toggle('open');
 
+    });
+
+    // Search toggle logic
+    const searchToggle = document.getElementById('search-toggle');
+    const searchContainer = document.getElementById('search-container');
+
+    searchToggle.addEventListener('click', () => {
+        if (searchContainer.style.display === 'none') {
+            searchContainer.style.display = 'block';
+            searchToggle.style.display = 'none';
+        } else {
+            searchContainer.style.display = 'none';
+        }
     });
     </script>
 </body>

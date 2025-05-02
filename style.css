@@ -55,6 +55,18 @@ footer {
     background-color: #00558E;
 }
 
+#search-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#search-toggle:hover {
+    color: #cccccc;
+}
+
 /* Nawigacja */
 nav ul {
     list-style: none;
