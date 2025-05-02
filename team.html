@@ -6,6 +6,7 @@
     <title>Our Team - High Flyers</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/hf_logo_white.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="https://cse.google.com/cse.js?cx=a427705e6d1074ef3"></script>
 </head>
 <body>
@@ -15,7 +16,6 @@
             <h1>High Flyers - SUAS 2025</h1>
             <!--<h1>Our Team</h1>-->
             <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-            <div class="gcse-search"></div>
         </div>
         <nav class="mobile-nav">
             <ul>
@@ -25,6 +25,14 @@
                 <li><a href="progress.html">Progress</a></li>
                 <li><a href="sponsors.html">Sponsors</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button id="search-toggle" aria-label="toggle search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </li>
+                <li id="search-container" style="display: none;">
+                    <div class="gcse-search"></div>
+                </li>
             </ul>
         </nav>
     </header>
